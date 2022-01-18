@@ -1,0 +1,118 @@
+/* body formatting */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* start margin formatting */
+.header,
+.intro,
+.random-info,
+.cta {
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.random-info,
+.inspirational-quote {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+/* end margin formatting */
+
+/* header formatting */
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #1F2937;
+}
+
+/* intro formatting */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #1F2937;
+}
+
+/* start random info formatting */
+.random-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* end random info formatting */
+
+/* inspriational quote */
+.inspirational-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cite {
+    align-self: flex-end;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-container {
+    display: flex;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* list formatting*/
+ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+/* hyperlink formatting */
+a {
+    text-decoration: none;
+    color: gray;
+}
