@@ -2,22 +2,22 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0px;
 }
 
 /* start margin formatting */
 .header,
 .intro,
-.random-info,
 .cta {
-    padding-right: 75px;
-    padding-left: 75px;
+    padding-right: 125px;
+    padding-left: 125px;
 }
 
-.random-info,
 .inspirational-quote {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 400px;
+    padding-left: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /* end margin formatting */
 
@@ -25,8 +25,14 @@ body {
 .header {
     display: flex;
     align-items: flex-start;
+    padding-top: 10px;
     justify-content: space-between;
     background-color: #1F2937;
+    color: white;
+}
+
+.header-logo {
+    font-weight: bold;
 }
 
 /* intro formatting */
@@ -37,18 +43,40 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #1F2937;
+    color: white;
+    gap: 50px;
+}
+
+.intro-title-text {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.intro-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* start random info formatting */
 .random-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.random-info-title {
+    font-weight: bolder;
+    font-size: 36px;
 }
 
 .image-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
     background-color: white;
 }
 
@@ -60,7 +88,21 @@ body {
 }
 
 img {
-    max-width: 100%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+img.season-img {
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+
+}
+
+img.header-img {
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
 }
 
 /* end random info formatting */
@@ -70,20 +112,34 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: lightgray;
+}
+
+.quote {
+    font-size: 30px;
+    font-style: italic;
 }
 
 .cite {
     align-self: flex-end;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .cta {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .cta-container {
     display: flex;
-    
+    align-items: center;
+    gap: 100px;
+    background-color: #3882F6;
+    padding: 30px;
+    margin: 60px;
+    border-radius: 10px;
+    color: white;
 }
 
 .footer {
@@ -94,14 +150,21 @@ img {
     color: white;
 }
 
+/* button formatting */
 
+button {
+    background-color: #3882F6;
+    color: white;
+    height: fit-content;
+    width: 75px;
+    border-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
+.intro-left-side button {
+    border-color: transparent;
+}
 
 /* list formatting*/
 ul {
@@ -114,5 +177,5 @@ ul {
 /* hyperlink formatting */
 a {
     text-decoration: none;
-    color: gray;
+    color: white;
 }
